@@ -23,7 +23,7 @@ int main()
     vector<int> v2 = v1;   // time - O(n)
     v2.push_back(5);
     printVector(v1);
-    printVector(v2);,
+    printVector(v2);
 
     vector<int> v;
     int n;

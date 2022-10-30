@@ -1,4 +1,5 @@
 # Standard Templates Library
+It is a library contaning all the class templates present in the standard namespace. 
 
 - **Container:-** <br>
 1.) Sequential: vector, stack, queue, pair(not a conatiner) <br>

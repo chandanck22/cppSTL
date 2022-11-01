@@ -21,4 +21,4 @@ It is a library contaning all the class templates present in the standard namesp
     -> sort <br>
     -> min_element <br>
     -> accumulate <br>
-    -> count, find, etc 
+     -> count, find, etc

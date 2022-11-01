@@ -255,3 +255,77 @@ for(vector<int>::iterator it=v.begin(); it != myvector.end(); ++it)
 
 // 4 5 6 7 9 1 2 3
 ```
+# for_each()
+- Applies function **fn** to each of the elements in range [first, last)
+- **fn** is unary function that accepts in the range as argument. This can either be function or a move construtible function objects. Its return value, if any, is ignored.
+```bash
+void fun(int i){
+    cout<<i<<" ";
+}
+int main()
+{
+    vector<int> v(5);
+    for(int i=0; i<5; i++)
+        v[i] = i+1;
+
+    for_each(v.begin(), v.end(), fun);
+    cout<<endl;
+}
+// 1 2 3 4 5
+```
+```bash
+struct A{
+    void operator()(int i){
+        cout<<i+5<<" ";
+    }
+};
+int main()
+{
+    vector<int> v(5);
+    for(int i=0; i<5; i++)
+        v[i] = i+1;
+    
+    struct A obj;
+    for_each(v.begin(), v.end(), obj);
+    cout<<endl;
+}
+// 6 7 8 9 10
+```
+# range based for loop in c++ (>= c++11)
+- anything that supports bidirectional iterator we can use this rang-based for loop. <br>
+for(range_declaration: range_expression) 
+    loop_statement
+
+```bash
+int main(){
+    vector<int> v(5);
+    for(int i=0; i<5; i++)
+        v[i] = i+1;
+
+    for(int x : v)
+        cout<<x<<" ";
+    cout<<endl;
+
+    int arr[5];
+    for(int i=0; i<5; i++)
+        arr[i] = i+5;
+    
+    for(int x : arr)
+        cout<<x<<" ";
+    cout<<endl;
+}
+// 1 2 3 4 5
+// 5 6 7 8 9
+```
+```bash
+int main(){
+    string str = "Chandan Kushwaha";
+    for(char x: str)
+        cout<<x<<" ";
+    cout<<endl;
+
+    for(int x: {1,2,3,4,5})
+        cout<<x<<" ";
+    cout<<endl;
+}
+```

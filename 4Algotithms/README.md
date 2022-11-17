@@ -69,3 +69,16 @@ cout<<"Upper bound is at pos: "<<(up - v.begin());
 // 6 
 ```
 
+# swap() Function
+ The swap() function exchanges the elements of the current vector with those of from. This function operates in constant time. <br>
+ Syntax:- <br>
+ *void swap(container& from)*<br>
+```bash
+ vector<int> v1;
+ v1.push_back(10);
+ vector<int> v2;
+ v2.push_back(20);
+ v1.swap(v2);
+ cout<<"The first element in v1 is: "<<v1.front()<<endl;  // 20
+ cout<<"The first element in v2 is: "<<v2.front()<<endl;  // 10
+```

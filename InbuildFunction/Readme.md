@@ -329,3 +329,22 @@ int main(){
     cout<<endl;
 }
 ```
+# adjacent_difference()
+Assigns to every element in the range starting at result the difference between its correspomding elements in the range [first,last) and the one preceding it.
+```bash 
+int main()
+int a[] = {1,2,3,5,9,11,12};
+int out[7];
+
+adjacent_difference (a, a+7, out);
+for(int i=0; i<7; i++)
+    cout<<out[i]<<" ";
+cout<<endl;
+// 1 1 1 2 4 2 2 
+
+adjacent_difference (a, a+7, out, multiplies<int>());
+for(int i=0; i<7; i++)
+    cout<<out[i]<<" ";
+cout<<endl;
+// 1 2 6 15 45 99 135
+```

@@ -8,7 +8,8 @@
 
 # unordered_map<>
 - It allows fast retrieval of individual elements based on their keys.
-- Elements are not sorted but organised int buckets depending on their hash values to allow for fast access.
+- Time Complexity : Storing and fetching : O(1) average, best case. O(n) worst case.
+- Elements are not sorted but organised in buckets depending on their hash values to allow for fast access.
 - They are implemented using hash table.
 - It cannot have duplicate KEY_VALUE pair.
 - It contains unsorted KEY_VALUE pairs.

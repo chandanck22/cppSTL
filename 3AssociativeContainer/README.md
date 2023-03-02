@@ -12,12 +12,13 @@
 # map<>
 - Each KEY is Unique and can't change.
 - maps contains sorted KEY_VAlUES pairs.
+- Time Complexity : storing and fetching (logN)
 - maps are associative container that store elements formed by a combination of a key value and a mapped value, following a specfic order.
 - In a map the key value are generally used to  sort uniquely identify the elements, while the mapped value store the content associated to this key.
 - Internally, the elements in a map are always sorted by its key following a specific strict weak ordering criteria indicated by its internal comparison object.
 - map are slower than unordered_map but they allow the direct iteration on subsets based on their order.
 - maps are typically implemented as binary search trees.
-- mapped values in a map can be accessed directly by their coresponding key using the bracket operator[].
+- mapped values in a map can be accessed directly by their corresponding key using the bracket operator[].
 ```bash
 map<key_type, value_type> map_name;
 

@@ -1,72 +1,94 @@
-# Standard Templates Library
+
+#  Standard Templates Library
+
 It is a set of C++ template classes that provide generic classes and functions that can be used to implament data strucure and algorithms.
 
-It is a library contaning all the class templates present in the standard namespace. 
+It is a library contaning all the class templates present in the standard namespace.
 
 Generic programming enables the programmer to write a general algorithm which will work with all data types.
 
-- **Container:-** helps us to implement and replicate simple and complex data structure very easily.  <br>
+**1.) Container:-** helps us to implement and replicate simple and complex data structure very easily.
 
-E.g - Creating Linked List<br>
+E.g - Creating Linked List
 
-1.
+**1.**
+
+    //  WITHOUT  STL
+    
+    struct  node{
+	    int  data;
+	    struct  node  *next;
+    };
+    
+    int  main(){
+	    struct  node  *n1;
+	    n1->  data;
+	    n1->next  -  NULL;
+    }
+
+**2.**
 ```bash
-// WITHOUT STL
-struct node{
-    int data;
-    struct node *next;
-};
-int main(){
-    struct node *n1;
-    n1-> data;
-    n1->next - NULL;
-}
-```
-2.
-```bash
-// WITH STL
-int main()
+//  WITH  STL
+
+int  main()
 {
-    list <int> node;
+	list  <int>  node;
 }
 ```
-**Container Types:-**
 
+**Container Types:-**
 1.) Sequence Containers:
 
-Array, Vector, List, Forward_list, Dqueue
+    Array
+    Vector
+    List
+    Forward_list
+    Dqueue
 
-2.) Container Adaptors: 
+2.) Container Adaptors:
 
-stack, queue, priority queue
+    stack
+    queue
+    priority_queue
 
 3.) Associative Container :
 
-set, map, multiset, multimap
+    set
+    map
+    multiset
+    multimap
 
-4.) Unordered: 
+4.) Unordered Container :
 
-unordered map, unordered set, unordered multimap, unordered multiset
+    unordered map
+    unordered set
+    unordered multimap
+    unordered multiset
+
+**Nested Container**
+
+    vector< vector< int>> 
+    map< int, vector< int>> 
+    set< pair< int, string>>
+    vector< map< int, set< int>>
 
 
-**Nested container**
+**2.) Iterators :-** point to memory address of containers
 
--> vector< vector< int>> <br>
--> map< int, vector< int>> <br>
--> set< pair< int, string>> <br>
--> vector< map< int, set< int>>> <br>
+    begin(), end() 
+    vector< int> :: iterators it;
+    next() / prev()
 
-- **Iterators :-** point to memory address of containers
+  
 
-    -> begin(), end() <br>
-    -> vector< int> :: iterators it;
+ **3.) Generic Algorithms:-**
 
-- **Generic Algorithms:-**
+    binary_search(startaddress,endaddress, valuetofind)
+    upperbound/lowerbound 
+    min/max 
+    accumulate 
+    count, find, 
+    reverse/rotate 
+    sort(startaddress, endaddress)
+    swap
 
-    -> binary search <br>
-    -> upperbound/lowerbound <br>
-    -> min/max <br>
-    -> accumulate <br>
-    -> count, find, <br>
-    -> reverse/rotate <br>
-    -> sort/swap etc

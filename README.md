@@ -84,11 +84,18 @@ int  main()
  **3.) Generic Algorithms:-**
 
     binary_search(startaddress,endaddress, valuetofind)
-    upperbound/lowerbound 
-    min/max 
-    accumulate 
-    count, find, 
-    reverse/rotate 
+    lower_bound(first_iterator, last_iterator, x)
+    upper_bound(first_iterator, last_iterator, x)
+    max_element(first_iterator, last_iterator)
+    min_element (first_iterator, last_iterator)
+    accumulate(first_iterator, last_iterator, initial value of sum)
+    count(first_iterator, last_iterator,x)
+    find(first_iterator, last_iterator, x)
+    reverse(first_iterator, last_iterator)
+    rotate(first_iterator, last_iterator)
     sort(startaddress, endaddress)
-    swap
+    arr.erase(position to be deleted)
+    arr.erase(unique(arr.begin(),arr.end()),arr.end())
+    next_permutation(first_iterator, last_iterator)
+    prev_permutation(first_iterator, last_iterator)
 
